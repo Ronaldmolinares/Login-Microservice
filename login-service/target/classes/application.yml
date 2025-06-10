@@ -6,8 +6,8 @@ spring:
     name: login-service
 
   datasource:
-    url: jdbc:mysql://192.168.71.71:3307/LoginDB
-    # url: jdbc:mysql://localhost:3307/LoginDB
+    # url: jdbc:mysql://192.168.71.71:3307/LoginDB
+    url: jdbc:mysql://localhost:3307/LoginDB
     username: root
     password: root
     driver-class-name: com.mysql.cj.jdbc.Driver
@@ -38,8 +38,8 @@ management:
 eureka:
   client:
     service-url:
-      defaultZone: http://192.168.71.71:8761/eureka/
-      # defaultZone: http://localhost:8761/eureka/
+      # defaultZone: http://192.168.71.71:8761/eureka/
+      defaultZone: http://localhost:8761/eureka/
     register-with-eureka: true
     fetch-registry: true
   instance:
