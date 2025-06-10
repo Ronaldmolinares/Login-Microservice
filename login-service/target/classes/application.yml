@@ -33,7 +33,7 @@ management:
                     requests: true
         distribution:
             percentiles:
-                http.server.requests: 0.95
+                "[http.server.requests]": 0.95
 
 eureka:
   client:
